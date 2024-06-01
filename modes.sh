@@ -43,10 +43,10 @@ do
 				PERM="${S}${U}${G}${O}" 
 				# Use PERM to hold the combined four octal values
 				
-				touch file${PERM} 
+				touch file${PERM} 2> /dev/null # 2> to discard error messages 
 				# create a file named file followed by the value of PERM
 				
-				mkdir dir${PERM} 
+				mkdir dir${PERM} 2> /dev/null # 2> to discard error messages
 				# create a directory named dir suffixed with the value of PERM
 				
 				chmod $PERM file${PERM} dir${PERM} 
