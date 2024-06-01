@@ -13,23 +13,28 @@
 # Create files and directories
 
 octal=$(seq 0 7)
+printf "Creating Directories and Files with all possible modes\n"
 for s in $octal 
 do 
-	echo Setting s=$s SPECIAL permissions
+	printf "$s"
 	for u in $octal
 	do 
-		echo Setting u=$u USER permissions	
+		printf "$u"
 		for g in $octal
 		do
-			echo Setting g=$g GROUP permissions	
+			printf "$g"
 			for o in $octal
 			do
-				echo Setting o=$o OTHER permissions	
 				perm="${s}${u}${g}${o}"
+				printf "$o"
 				touch file${perm}
 				mkdir dir${perm}
 				chmod $perm file${perm} dir${perm}
+				printf "\b"
 			done
+			printf "\b"
 		done
+		printf "\b"
 	done
+	printf "\b"
 done
