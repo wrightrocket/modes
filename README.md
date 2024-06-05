@@ -1,5 +1,5 @@
 # Modes
-This bash script create files and directories with every possible combination of permissions.
+The modes.sh bash script create files and directories with every possible combination of permissions.
 
 ## modes.sh
 A bash script to generate files and directories using all modes of permissions.
