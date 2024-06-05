@@ -1,13 +1,16 @@
-# modes.sh
+# Modes
+This bash script create files and directories with every possible combination of permissions.
+
+## modes.sh
 A bash script to generate files and directories using all modes of permissions.
 
-# modes-cleanup.sh
+## modes-cleanup.sh
 A bash script to remove the file* and dir* files from a directory created by modes.sh.
 
-# modes-dirs-files.tar.gz
+## modes-dirs-files.tar.gz
 An archive file created by the tar command of all files and directories modes.sh creates. 
 
-# modes-view.sh
+## modes-view.sh
 A bash script to view the compressed archive files showing the symbolic permissions.
 
 ## Notes
